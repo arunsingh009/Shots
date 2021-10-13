@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    background-color: #242536;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    /* z-index: 999; */
+    z-index: 1;
+    height:12vh;
+    line-height: 65px;
+}
+nav.wrapper{
+    position: sticky;
+    padding: 0 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+
+}
+.wrapper .logo a img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: auto;
+
+    
+}
+.wrapper .nav-links{
+    display: inline-flex;
+    width: 70%;
+    /* border: 2px solid white; */
+    justify-content: right;
+    padding-right:50px; 
+}
+ .nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    /* background: #3a3b3c; */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+.nav-links .mobile-item{
+    display: none;
+}
+.nav-links li a:hover{
+    background: #3a3b3c;
+}
+
+.nav-links .drop-menu{
+    background: #242526;
+    width: 150px;
+    top: 65px;
+    line-height: 45px;
+    display: none;
+    position: absolute;
+}
+.nav-links li:hover .drop-menu
+{
+    top: 65px;
+    opacity: 1;
+    display: block;
+    transition: all 0.1s ease;
+    color: black;
+
+}
+.drop-menu li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    border-radius: 0px;
+
+}
+main::before{
+    content: "";
+    height: 400vh;
+    background-color: #e2d8d8;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+/* slider images starts from here  */
+
+/* Slideshow container */
+.slider{
+    width: 100%;
+    height: 88vh;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slideshow-container {
+    width: 90%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides img{
+      height: 80vh;
+      width: 100%;
+      border: 1px solid white;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.new{
+    width: 95%;
+    margin: auto;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    
+}
+.newC{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+.newC::-webkit-scrollbar{
+    display: none;
+}
+.head{
+    display: flex;
+    align-items: center;
+     justify-content: center;
+      padding-top: 5px;
+}
+.head h3{
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 4px solid black;
+    margin-bottom: 10px;
+}
+  .new::before{
+      content:"";
+      position: absolute;
+      height: 65vh;
+      width: 95%;
+      left: 2.5%;
+      background-color: #ffffff;
+      opacity: 0.6;
+      border: 1px solid transparent;
+      z-index: -1;
+      border-radius: 20px;
+  }
+  .arrival-card{
+      height: 50vh;
+      width: 24%;
+      margin: 0px 10px;
+      border-radius: 20px;
+      box-shadow: 2px 2px 2px 2px rgba(187, 185, 185, 0.808);
+
+  }
+  .arrival-card img{
+      height: 40vh;
+      width: 220px;
+      border-radius:20px 20px 0px 0px ;
+  }
+  .arrival-card .cS{
+      height: 10vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content:center ;
+  }
+  .cS .cSbtn{
+      height: 45px;
+      width: 180px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer; 
+  }
+
+  /* about begins from here  */
+
+  .about{
+      height: 100vh;
+      width: 100%;
+      /* border: 2px solid black; */
+      margin-top: 5vh;
+      display: flex;
+      flex-direction: column;
+  }
+  .head h1{
+      font-size: 2.1rem;
+      border-bottom: 5px solid rgba(135, 135, 218, 0.685);
+  }
+  .content{
+      width: 100%;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .box1{
+      width: 60%;
+      height: 80vh;
+      /* border: 2px solid black; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+  }
+  .box2{
+      width: 40%;
+      height: 80vh;
+      /* border: 2px solid black; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .box2 img{
+      padding-left: 15px;
+  }
+  .boxC{
+      width: 80%;
+      height: 70vh;
+      padding: 5%;
+      border: 4px solid transparent;
+      background-color: #fff;
+      border-radius: 50px 0px 50px 0px;
+      box-shadow: 2px 4px 10px 10px rgba(175, 167, 167, 0.795);
+      font-size: 17px;
+
+  }
+
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 0.5s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 0.5s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+
